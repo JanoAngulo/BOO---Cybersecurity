@@ -1,6 +1,6 @@
 {
-  "name": "@figma/my-make-file",
-  "private": true,
+  "name": "boo-cybersecurity",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "scripts": {

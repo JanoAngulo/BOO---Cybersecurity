@@ -142,7 +142,6 @@ export function Header() {
             type="button"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isOpen ? "true" : "false"}
             className="cursor-pointer w-10 h-10 rounded-lg flex items-center justify-center bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white"
           >
             <AnimatePresence mode="wait" initial={false}>

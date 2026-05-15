@@ -128,14 +128,7 @@ export function Hero() {
                 {/* Background Grid */}
                 <div
                   aria-hidden="true"
-                  className="absolute inset-0 opacity-[0.12] dark:opacity-[0.18] pointer-events-none"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgba(226,179,49,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(226,179,49,0.4) 1px, transparent 1px)",
-                    backgroundSize: "36px 36px",
-                    maskImage:
-                      "radial-gradient(ellipse 70% 60% at 50% 40%, #000 50%, transparent 100%)",
-                  }}
+                  className="dashboard-grid absolute inset-0 opacity-[0.12] dark:opacity-[0.18] pointer-events-none"
                 ></div>
 
                 {/* Top KPI Row */}
@@ -185,11 +178,7 @@ export function Hero() {
                       <motion.div
                         animate={{ rotate: 360 }}
                         transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                        className="absolute w-56 h-56 rounded-full"
-                        style={{
-                          background:
-                            "conic-gradient(from 0deg, rgba(226,179,49,0.35) 0deg, transparent 60deg)",
-                        }}
+                        className="radar-sweep absolute w-56 h-56 rounded-full"
                       ></motion.div>
 
                       {/* Center shield */}
@@ -262,8 +251,7 @@ export function Hero() {
                         {[40, 65, 30, 80, 55, 90, 45, 70, 60, 95, 50, 75, 85, 60, 100].map((h, i) => (
                           <div
                             key={i}
-                            className="flex-1 bg-gradient-to-t from-brand/40 to-brand rounded-sm"
-                            style={{ height: `${h}%` }}
+                            className={`flex-1 bg-gradient-to-t from-brand/40 to-brand rounded-sm sparkline-h-${h}`}
                           ></div>
                         ))}
                       </div>

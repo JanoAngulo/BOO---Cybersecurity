@@ -118,11 +118,10 @@ export function Contact() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.639290621062!2d-122.08374688469227!3d37.422408279825215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2sGoogleplex!5e0!3m2!1sen!2sus!4v1657662999999!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                className="iframe-no-border dark:invert-[.9] dark:hue-rotate-180"
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="dark:invert-[.9] dark:hue-rotate-180"
               ></iframe>
               <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-white/90 dark:bg-slate-900/90 backdrop-blur border border-slate-200 dark:border-slate-700 font-mono text-[10px] tracking-widest text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse"></span>

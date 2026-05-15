@@ -218,3 +218,35 @@
     line-height: 1.5;
   }
 }
+
+.dashboard-grid {
+  background-image:
+    linear-gradient(rgba(226, 179, 49, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(226, 179, 49, 0.4) 1px, transparent 1px);
+  background-size: 36px 36px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 50%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 50%, transparent 100%);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg, rgba(226, 179, 49, 0.35) 0deg, transparent 60deg);
+}
+
+.sparkline-h-30 { height: 30%; }
+.sparkline-h-40 { height: 40%; }
+.sparkline-h-45 { height: 45%; }
+.sparkline-h-50 { height: 50%; }
+.sparkline-h-55 { height: 55%; }
+.sparkline-h-60 { height: 60%; }
+.sparkline-h-65 { height: 65%; }
+.sparkline-h-70 { height: 70%; }
+.sparkline-h-75 { height: 75%; }
+.sparkline-h-80 { height: 80%; }
+.sparkline-h-85 { height: 85%; }
+.sparkline-h-90 { height: 90%; }
+.sparkline-h-95 { height: 95%; }
+.sparkline-h-100 { height: 100%; }
+
+.iframe-no-border {
+  border: 0;
+}

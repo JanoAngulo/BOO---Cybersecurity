@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { ThemeProvider } from 'next-themes';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 export default function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 transition-colors duration-300 selection:bg-[#e2b331] selection:text-white">
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 transition-colors duration-300 selection:bg-brand selection:text-slate-900">
         <Header />
         <main>
           <Hero />
@@ -26,7 +26,7 @@ export default function App() {
           <About />
           <Pricing />
           <div className="relative">
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#e2b331]/30 to-transparent"></div>
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand/30 to-transparent"></div>
             <div className="[&>section]:!bg-transparent">
               <Contact />
             </div>

@@ -2,10 +2,19 @@
 
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
+  --background: #f8fafc;
+  --foreground: #0f172a;
   --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-muted: #f1f5f9;
+  --border-soft: #e2e8f0;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --brand: #e2b331;
+  --brand-strong: #c59a20;
+  --brand-ink: #8a6712;
+  --brand-on: #0f172a;
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
   --primary: #030213;
@@ -42,10 +51,19 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  --background: #020617;
+  --foreground: #f8fafc;
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --surface: #0f1526;
+  --surface-muted: #0f172a;
+  --border-soft: #1e293b;
+  --text-muted: #cbd5e1;
+  --text-subtle: #94a3b8;
+  --brand: #e2b331;
+  --brand-strong: #f3c84a;
+  --brand-ink: #f3c84a;
+  --brand-on: #0f172a;
   --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.985 0 0);
@@ -117,7 +135,17 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  
+
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border-soft: var(--border-soft);
+  --color-text-muted: var(--text-muted);
+  --color-text-subtle: var(--text-subtle);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-on: var(--brand-on);
+
   --font-display: "Bebas Neue", sans-serif;
   --font-sans: "Open Sans", sans-serif;
 }
@@ -138,6 +166,7 @@
 
   html {
     font-size: var(--font-size);
+    scroll-padding-top: 6rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
